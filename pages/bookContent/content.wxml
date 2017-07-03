@@ -1,0 +1,14 @@
+<view class="container">
+    <text>{{bookMess}}</text>
+
+        <picker-view indicator-style="height: 50px;" class="picker" value="{{value}}"
+                     catchchange="titleChange">
+            <picker-view-column>
+                <view wx:for="{{titles}}" style="line-height: 50px">{{item}}</view>
+            </picker-view-column>
+        </picker-view>
+
+    <text>{{content}}</text>
+</view>
+
+
